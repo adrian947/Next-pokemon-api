@@ -18,7 +18,7 @@ export const CardPokemon: FC<Props> = ({ pokemon }) => {
   };
 
   return (
-    <Grid xs={12} sm={6} md={3} xl={3}>
+    <Grid xs={12} sm={6} md={5} xl={3}>
       <Card css={{ w: "100%", p: 0 }}>
         <Card.Header css={{ zIndex: 1, top: 5 }}>
           <Row gap={1}>
@@ -49,7 +49,7 @@ export const CardPokemon: FC<Props> = ({ pokemon }) => {
             zIndex: 1,
           }}
         >
-          <Row css={{ display: "flex", gap: "1rem" }}>
+          <Row css={{ display: "flex", gap: ".5rem", flexDirection: "column" }}>
             <Button
               flat
               auto
